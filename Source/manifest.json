@@ -1,0 +1,15 @@
+{
+	"manifest_version": 2,
+	"name": "US to UK",
+	"version": "1.0",
+	"description": "Replaces malformed US words with the English equivalent.",
+	"content_scripts": 
+	[
+		{
+			"matches": ["*://*/*"],
+			"js": ["content_script.js"],
+			"run_at": "document_end"
+		}
+	]
+}
+
